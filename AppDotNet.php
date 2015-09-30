@@ -11,22 +11,18 @@
 |
 */
 
-// comment these two lines out in production
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 session_start();
 
 class AppDotNet {
 
 	// 1.) Enter your Client ID
-	var $_clientId = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+	var $_clientId = '';
 
 	// 2.) Enter your Client Secret
-	var $_clientSecret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+	var $_clientSecret = '';
 
 	// 3.) Enter your Callback URL
-	var $_redirectUri = 'http://your-website.com/callback.php';
+	var $_redirectUri = '';
 	
 	// 4.) Add or remove scopes
 	var $_scope = array(
@@ -329,4 +325,3 @@ class AppDotNet {
 	}
 
 }
-?>

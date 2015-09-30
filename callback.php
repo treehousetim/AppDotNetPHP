@@ -10,4 +10,3 @@ $code = $app->setSession();
 // redirect user after logging in
 header('Location: index.php');
 
-?>
